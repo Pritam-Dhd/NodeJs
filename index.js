@@ -11,6 +11,8 @@
 //     },
 // };
 
+// ❗Different export method
+// export {a}
 // module.exports=a;
 
 
@@ -50,29 +52,29 @@
 // console.log(pokemon.getId("Litten"));
 
 // ❗Node Server
-const http=require("http");
-const fs=require("fs");
+// const http=require("http");
+// const fs=require("fs");
 
-const PORT=4000;
-const hostname="localhost";
-const home=fs.readFileSync("./index.html");
+// const PORT=4000;
+// const hostname="localhost";
+// const home=fs.readFileSync("./index.html");
 
-const server=http.createServer((request, response)=>{
-    if(request.url==="/"){
-        return response.end(home);
-    }
-    else if(request.url==="/about"){
-        return response.end(" <h1>About Page<h1>");
-    }
-    else if(request.url==="/service"){
-        return response.end(" <h1>Service Page</h1>");
-    }
-    else{
-        return response.end(" <h1>404 Page not found</h1>");
-    }
+// const server=http.createServer((request, response)=>{
+//     if(request.url==="/"){
+//         return response.end(home);
+//     }
+//     else if(request.url==="/about"){
+//         return response.end(" <h1>About Page<h1>");
+//     }
+//     else if(request.url==="/service"){
+//         return response.end(" <h1>Service Page</h1>");
+//     }
+//     else{
+//         return response.end(" <h1>404 Page not found</h1>");
+//     }
     
-})
+// })
 
-server.listen(PORT,hostname,()=>{
-    console.log(`Server is running on http://${hostname}:${PORT}`);
-})
+// server.listen(PORT,hostname,()=>{
+//     console.log(`Server is running on http://${hostname}:${PORT}`);
+// })
