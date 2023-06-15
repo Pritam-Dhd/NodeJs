@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile</title>
+  </head>
+  <body>
+    <!-- To show another html in this html -->
+    <%- include('common/Header') %>
+    <h1>Profile Page</h1>
+    <!-- To dynamically show the data -->
+    <h2>Welcome <%= user.name %></h2>
+    <h3>Your Email is <%= user.email %></h3>
+    <h5>
+      <ul>
+        <% user.skills.map((item) => { %>
+        <li><%= item %></li>
+        <% }) %>
+      </ul>
+    </h5>
+  </body>
+</html>
