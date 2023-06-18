@@ -19,7 +19,7 @@ const Student = mongoose.model("students",student);
 
 // ❓Adding a document to the collection
 const add=async()=>{
-    // ❗Using save() method
+    // ❗Using save() method which is old
 
     // const ss=new Student({
     //     name:"Pritam6",
@@ -27,7 +27,7 @@ const add=async()=>{
     // })
     // await ss.save();
 
-    // ❗Using create() method
+    // ❗Using create() method which is new
     try {
         // ❗Using create() method
         const ss = await Student.create({
